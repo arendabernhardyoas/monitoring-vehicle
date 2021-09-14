@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>Monitoring Vehicle - Maps</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/mdb.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/addons/datatables.min.css"/>
+<script src="js/jquery-3.5.1.js" content="text/javascript"></script> 
+<script src="js/rtc_js.js" content="text/javascript"></script>
+<script src="js/datetimepicker.js" content="text/javascript"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+  <script type="text/javascript" src="js/popper.min.js"></script> 
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="./js/addons/datatables.min.js"></script>	
+
+<link rel="stylesheet" href="leaflet/leaflet.css"/>
+<script src="leaflet/leaflet.js"></script>
+<script src="js/data_maps_1.js"></script>
+<script src="js/data_maps_2.js"></script>
+
+</head>
+
+<body onload="startTime();" class="blue accent-1">
+
+<div id="map-1" style="width:100vw;height:45vh"></div>
+
+<div id="rtc_js" class="text-center text-white"></div>
+
+<div id="input" style="position:absolute;right:0vw;bottom:45vh;color:white">
+      <input id="pickdate1" name="date1" type="text">
+      <a href="javascript:NewCal('pickdate1','yyyymmdd',true,24)">
+      <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a>
+      </input>to
+      <input id="pickdate2" name="date2" type="text">
+      <a href="javascript:NewCal('pickdate2','yyyymmdd',true,24)">
+      <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"></a>
+      </input>
+      <button id="button" onclick="loadData2()">Search</button>
+</div>
+
+<div id="map-2" style="position:absolute;bottom:0;width:100vw;height:45vh"></div>
+
+</body>
+
+</html>

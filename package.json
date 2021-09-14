@@ -1,0 +1,14 @@
+{
+  "name": "monitoring-vehicle",
+  "version": "1.0.0",
+  "description": "Monitoring Maps - Monitoring Vehicle",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Arenda Bernhard Yoas",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.7.1"
+  }
+}
